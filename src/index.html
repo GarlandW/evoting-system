@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vopt</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body style = "background :url('images/background.jpg' ) ; background-size: 100%;">
+    
+        <div class="container">
+            <div class="row">
+              <div class="col-xs-12 col-sm-8 col-sm-push-2">
+                <h1 class="text-center">Ethereum Vote</h1>
+                 <hr />
+                 <div id="instructions">
+                <p class="text-center">Please Use Metamask to connect to Ethereum Blockchain</p>
+                    </div>
+                   <p id="ethereumaccount" class="text-center"></p>
+                    <div id="votecounter">
+                 <hr />
+                   <p class="text-center">Your Vote has been processed</p>
+
+                    </div>
+                    <div id="formsubmission" style="display: none;">
+                        <!--   <table class="table">
+                             <thead>
+                              <tr>
+                              <th scope="col">Key</th>
+                              <th scope="col">Option</th>
+                              <th scope="col">Votes</th>
+                              </tr>
+                              </thead>
+                              <tbody id="Optionresults"></tbody>
+                              </table> -->
+                        <form onSubmit="App.VoteCheck(); return false;">
+                            <div class="form-group">
+                                <label for="optionform">Option Choice</label>
+                                <select class="form-control" id="optionform"></select>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Vote</button>
+
+                        </form>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/web3.min.js"></script>
+            <script src="js/truffle-contract.js"></script>
+            <script src="js/app.js"></script>
+
+    </body>
+    </html>
+
